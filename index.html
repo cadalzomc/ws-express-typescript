@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSocket Test</title>
+  </head>
+  <body>
+    <h1>WebSocket Client</h1>
+    <input id="message" type="text" placeholder="Type a message..." />
+    <button id="send">Send</button>
+    <div id="output"></div>
+
+    <script>
+      const output = document.getElementById("output");
+      const ws = new WebSocket("ws://localhost:3000");
+
+      ws.onmessage = (event) => {
+        const message = document.createElement("div");
+        message.textContent = `Server: ${event.data}`;
+        output.appendChild(message);
+      };
+
+      document.getElementById("send").onclick = () => {
+        const messageInput = document.getElementById("message");
+        const message = messageInput.value;
+        ws.send(message);
+        messageInput.value = "";
+      };
+    </script>
+  </body>
+</html>
