@@ -47,10 +47,11 @@ This project demonstrates how to set up a simple Node.js application using WebSo
 ## Usage
 
 1. **Compile TypeScript and start the server:**
+   
 ***You can run the server in development mode using nodemon:***
    
-   ```bash
-   npm run dev
+      ```bash
+      npm run dev
 
 ***This will start the server and watch for file changes.***
 
@@ -60,6 +61,7 @@ This project demonstrates how to set up a simple Node.js application using WebSo
    [npm run dev](http://localhost:3000)
 
 ## Testing the WebSocket Connection
+
 ***To test the WebSocket server, you can use the provided HTML client. Follow these steps:***
 
 1. **Create an HTML file:**
