@@ -31,8 +31,8 @@ This project demonstrates how to set up a simple Node.js application using WebSo
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/my-websocket-project.git
-   cd my-websocket-project
+   git clone https://github.com/yourusername/ws-express-typescript.git
+   cd ws-express-typescript
 
 2. **Install the dependencies:**
 
