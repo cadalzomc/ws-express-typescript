@@ -37,28 +37,27 @@ This project demonstrates how to set up a simple Node.js application using WebSo
 2. **Install the dependencies:**
 
    ```bash
-   npm install
+      npm install
 
 3. **Initialize TypeScript:**
 
    ```bash
-   npm run dev
+     npx tsc --init
 
 ## Usage
 
 1. **Compile TypeScript and start the server:**
-   
 ***You can run the server in development mode using nodemon:***
    
-      ```bash
-      npm run dev
+   ```bash
+       npm run dev
 
 ***This will start the server and watch for file changes.***
 
 2. **Access the server:**
 
    ```bash
-   [npm run dev](http://localhost:3000)
+      http://localhost:3000
 
 ## Testing the WebSocket Connection
 
@@ -108,7 +107,6 @@ This project demonstrates how to set up a simple Node.js application using WebSo
    ***Type a message and click "Send". You should see the messages exchanged between the client and server in real time.***
 
 ## License
-
 ***This project is licensed under the MIT License - see the LICENSE file for details.***
 
 ### Instructions
